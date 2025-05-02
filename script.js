@@ -13,3 +13,11 @@ document.querySelectorAll('.nav-item').forEach(item => {
         item.classList.add('active');
     });
 });
+
+// Handle sidebar navigation
+document.querySelectorAll('.sidebar-nav-item').forEach(item => {
+    item.addEventListener('click', () => {
+        document.querySelectorAll('.sidebar-nav-item').forEach(i => i.classList.remove('active'));
+        item.classList.add('active');
+    });
+});
