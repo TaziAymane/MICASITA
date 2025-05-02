@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    min-height: 100vh;
+    position: relative;
+}
+
+.header {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.time {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.location {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.search-bar {
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.search-bar input {
+    border: none;
+    background: transparent;
+    width: 100%;
+    padding: 5px;
+    outline: none;
+}
+
+.categories {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px 15px;
+    gap: 15px;
+    border-bottom: 1px solid #eee;
+    scrollbar-width: none;
+}
+
+.categories::-webkit-scrollbar {
+    display: none;
+}
+
+.category {
+    min-width: 80px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+.category.active {
+    color: #000;
+    font-weight: bold;
+}
+
+.category-icon {
+    background-color: #f5f5f5;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 5px;
+}
+
+.section-title {
+    padding: 15px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.stores {
+    padding: 0 15px;
+}
+
+.store-card {
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.store-image {
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    flex-shrink: 0;
+}
+
+.store-info {
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.store-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.store-details {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.store-rating {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.store-rating .thumb {
+    margin-right: 5px;
+    color: green;
+}
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    padding: 10px 0;
+    border-top: 1px solid #eee;
+}
+
+.nav-item {
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+}
+
+.nav-item.active {
+    color: #000;
+    font-weight: bold;
+}
+
+.nav-icon {
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+
+.cashless-banner {
+    background-color: #f0f7ff;
+    padding: 10px 15px;
+    margin: 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.cashless-banner .icon {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.payment-method {
+    margin-left: auto;
+    font-size: 12px;
+    color: #666;
+}
+
+@media (max-width: 400px) {
+    .store-card {
+        flex-direction: column;
+    }
+    
+    .store-image {
+        width: 100%;
+        height: 120px;
+    }
+}
