@@ -1,4 +1,4 @@
- // Simple JavaScript to handle category selection
+ // Handle category selection
  document.querySelectorAll('.category').forEach(category => {
     category.addEventListener('click', () => {
         document.querySelectorAll('.category').forEach(c => c.classList.remove('active'));
