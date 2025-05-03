@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tazi Aymane - Partagez l'application</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="ProfileStyle.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="header">
+            <h1>Tazi Aymane</h1>
+        </div>
+        
+        <div class="content-area">
+            <div class="share-card">
+                <div class="share-title">Partagez avec votre ami</div>
+                <div class="share-description">Partager l'application et profitez de nos offres</div>
+                <button class="share-button">Partager maintenant</button>
+                
+                <div class="menu-list">
+                    <div class="menu-item">
+                        <input type="checkbox" id="share-now" checked>
+                        <label for="share-now">Partager maintenant</label>
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <div class="menu-item">
+                        <input type="checkbox" id="my-orders" checked>
+                        <label for="my-orders">Mes commandes</label>
+                        <i class="fas fa-shopping-bag"></i>
+                    </div>
+                    <div class="menu-item">
+                        <input type="checkbox" id="contact-us">
+                        <label for="contact-us">Contactez-nous</label>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="menu-item">
+                        <input type="checkbox" id="privacy-policy">
+                        <label for="privacy-policy">Privacy policy</label>
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="menu-item">
+                        <input type="checkbox" id="logout">
+                        <label for="logout">Se déconnecter</label>
+                        <i class="fas fa-sign-out-alt"></i>
+                    </div>
+                </div>
+                
+                <div class="finagais">[Finagais]</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Handle menu item clicks
+        document.querySelectorAll('.menu-item').forEach(item => {
+            item.addEventListener('click', function() {
+                const checkbox = this.querySelector('input[type="checkbox"]');
+                checkbox.checked = !checkbox.checked;
+                
+                // Uncheck all other checkboxes when one is selected
+                if(checkbox.checked) {
+                    document.querySelectorAll('.menu-item input[type="checkbox"]').forEach(cb => {
+                        if(cb !== checkbox) cb.checked = false;
+                    });
+                }
+            });
+        });
+        
+        // Handle footer navigation
+        document.querySelectorAll('.footer-item').forEach(item => {
+            item.addEventListener('click', function() {
+                document.querySelectorAll('.footer-item').forEach(i => i.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+        
+        // Handle share button click
+        document.querySelector('.share-button').addEventListener('click', function() {
+            alert('Fonction de partage activée!');
+            // Actual sharing functionality would go here
+            // For mobile: navigator.share() API
+            // For desktop: social media links or copy to clipboard
+        });
+    </script>
+</body>
+</html>

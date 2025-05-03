@@ -148,26 +148,57 @@
                     
                     
                     <div class="store-card">
-                        <div class="store-image"></div>
+                        <div class="store-image">
+                            <img src="./images/PetitdejeunerCategorie.jpg" alt="">
+                        </div>
                         <div class="p-3">
-                            <div class="store-name">Sushi World</div>
-                            <div class="store-details">20 - 30 min</div>
+                            <div class="store-name">Petit Déjeuner </div>
+                            <div class="store-details">15 - 25 min</div>
                             <div class="store-rating">
-                                <span class="thumb"><i class="fas fa-thumbs-up"></i></span> 7.50 Dh
+                                <span class="thumb"><i class="fas fa-thumbs-up"></i> Good Shoes </span>
                             </div>
                         </div>
                     </div>
                     
                     <div class="store-card">
-                        <div class="store-image"></div>
+                        <div class="store-image">
+                            <img src="./images/crepeSaléesCategorier2.png" alt="">
+                        </div>
                         <div class="p-3">
-                            <div class="store-name">Burger King</div>
-                            <div class="store-details"><i class="fas fa-truck"></i>15 - 25 min</div>
+                            <div class="store-name">Crepe salées </div>
+                            <div class="store-details">15 - 25 min</div>
                             <div class="store-rating">
-                                <span class="thumb"><i class="fas fa-thumbs-up"></i></span> 8.50 Dh
+                                <span class="thumb"><i class="fas fa-thumbs-up"></i> Good Shoes </span>
                             </div>
                         </div>
                     </div>
+
+                    <div class="store-card">
+                        <div class="store-image">
+                            <img src="./images/pate2.jpg" alt="">
+                        </div>
+                        <div class="p-3">
+                            <div class="store-name">Les Pate </div>
+                            <div class="store-details">15 - 25 min</div>
+                            <div class="store-rating">
+                                <span class="thumb"><i class="fas fa-thumbs-up"></i> Good Shoes </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="store-card">
+                        <div class="store-image">
+                            <img src="./images/tacosCat3.jpg" alt="">
+                        </div>
+                        <div class="p-3">
+                            <div class="store-name">Tacos</div>
+                            <div class="store-details">15 - 25 min</div>
+                            <div class="store-rating">
+                                <span class="thumb"><i class="fas fa-thumbs-up"></i> Good Shoes </span>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -189,17 +220,48 @@
                 </div>
                 <div class="col nav-item">
                     <div class="nav-icon"><i class="fas fa-user"></i></div>
-                    <div>Profile</div>
+                    <div><a href="Profile.html" class="profile-link">Profile</a></div>
                 </div>
             </div>
         </div>
     </div>
 
+
+    
+
     <!-- Bootstrap 5 JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     
-    <script src="style.css">
-       
+    <script>
+         // Handle category selection
+//  document.querySelectorAll('.category').forEach(category => {
+//     category.addEventListener('click', () => {
+//         document.querySelectorAll('.category').forEach(c => c.classList.remove('active'));
+//         category.classList.add('active');
+//     });
+// });
+
+// Handle bottom navigation
+// document.querySelectorAll('.nav-item').forEach(item => {
+//     item.addEventListener('click', (e) => {
+//         // Don't do anything if clicking the profile link
+//         if (e.target.classList.contains('profile-link') || 
+//             e.target.closest('.profile-link')) {
+//             return;
+//         }
+        
+//         document.querySelectorAll('.nav-item').forEach(i => i.classList.remove('active'));
+//         item.classList.add('active');
+//     });
+// });
+
+// Handle sidebar navigation
+// document.querySelectorAll('.sidebar-nav-item').forEach(item => {
+//     item.addEventListener('click', () => {
+//         document.querySelectorAll('.sidebar-nav-item').forEach(i => i.classList.remove('active'));
+//         item.classList.add('active');
+//     });
+// });
     </script>
 </body>
 </html>
