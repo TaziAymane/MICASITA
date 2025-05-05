@@ -21,3 +21,22 @@ document.querySelectorAll('.sidebar-nav-item').forEach(item => {
         item.classList.add('active');
     });
 });
+
+// Initialize Swiper
+const swiper = new Swiper('.categories-swiper', {
+    slidesPerView: 'auto',
+    spaceBetween: 15,
+    freeMode: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+});
+
+// Handle category selection
+document.querySelectorAll('.category').forEach(category => {
+    category.addEventListener('click', () => {
+        document.querySelectorAll('.category').forEach(c => c.classList.remove('active'));
+        category.classList.add('active');
+    });
+});
