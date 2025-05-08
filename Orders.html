@@ -8,7 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
+    <link rel="stylesheet" href="style.css">
+    <!-- <style>
         :root {
             --primary-color: #FF6B6B;
             --secondary-color: #4ECDC4;
@@ -193,126 +194,154 @@
             text-align: center;
             margin-right: 10px;
         }
-    </style>
+    </style> -->
 </head>
 <body>
-    <div class="app-container">
-        <div class="header">
+    <div class="app-wrapper">
+        <div class="page-header">
             <h1>Mes Commandes</h1>
         </div>
         
-        <div class="main-content">          
-            
+        <div class="main-content-area">          
+             <!-- Desktop Sidebar -->
+             <div class="navigation-sidebar d-none d-md-block">
+                <div class="sidebar-nav">
+                    <div class="sidebar-item active">
+                        <div class="sidebar-icon"><i class="fas fa-home"></i></div>
+                        <div>Home</div>
+                    </div>
+
+                    <a href="Offers.html" class="sidebar-item text-decoration-none text-reset">
+                        <div class="sidebar-icon"><i class="fas fa-star"></i></div>
+                        <div>Offers</div>
+                    </a>
+                    <a href="Orders.html" class="sidebar-item text-decoration-none text-reset">
+                        <div class="sidebar-icon"><i class="fas fa-user"></i></div>
+                        <div>Orders</div>
+                    </a>
+                    <a href="Profile.html" class="sidebar-item text-decoration-none text-reset">
+                        <div class="sidebar-icon"><i class="fas fa-user"></i></div>
+                        <div>Profile</div>
+                    </a>
+                    <div class="sidebar-item">
+                        <div class="sidebar-icon"><i class="fas fa-utensils"></i></div>
+                        <div>Micasita Restaurants</div>
+                    </div>
+                    <div class="sidebar-item">
+                        <div class="sidebar-icon"><i class="fas fa-shopping-basket"></i></div>
+                        <div>Wanny Supermarché</div>
+                    </div>
+                </div>
+            </div>
             <!-- Main Content Area -->
-            <div class="content-area">
-                <div class="order-card">
+            <div class="content-section">
+                <div class="order-item">
                     <div class="order-header">
-                        <div class="order-title">Lamadon</div>
-                        <div class="order-id">#28117</div>
+                        <div class="order-name">Lamadon</div>
+                        <div class="order-number">#28117</div>
                     </div>
-                    <div class="order-details">
+                    <div class="order-info">
                         <div class="order-price">98 Dh | 1 Produit</div>
-                        <div class="order-status">
+                        <div class="order-state">
                             <i class="fas fa-check-circle"></i> Livrée
                         </div>
                     </div>
-                    <div class="order-actions">
-                        <a class="action-link">Voir les détails</a>
-                        <a class="action-link">Commander de nouveau</a>
+                    <div class="order-options">
+                        <a class="option-link">Voir les détails</a>
+                        <a class="option-link">Commander de nouveau</a>
                     </div>
                 </div>
                 
-                <div class="order-card">
+                <div class="order-item">
                     <div class="order-header">
-                        <div class="order-title">Lamadon</div>
-                        <div class="order-id">#28104</div>
+                        <div class="order-name">Lamadon</div>
+                        <div class="order-number">#28104</div>
                     </div>
-                    <div class="order-details">
+                    <div class="order-info">
                         <div class="order-price">98 Dh | 1 Produit</div>
-                        <div class="order-status cancelled">
+                        <div class="order-state cancelled">
                             <i class="fas fa-times-circle"></i> Annulée
                         </div>
                     </div>
-                    <div class="order-actions">
-                        <a class="action-link">Voir les détails</a>
+                    <div class="order-options">
+                        <a class="option-link">Voir les détails</a>
                     </div>
                 </div>
                 
-                <div class="order-card">
+                <div class="order-item">
                     <div class="order-header">
-                        <div class="order-title">Lamadon</div>
-                        <div class="order-id">#28117</div>
+                        <div class="order-name">Lamadon</div>
+                        <div class="order-number">#28117</div>
                     </div>
-                    <div class="order-details">
+                    <div class="order-info">
                         <div class="order-price">98 Dh | 1 Produit</div>
-                        <div class="order-status">
+                        <div class="order-state">
                             <i class="fas fa-check-circle"></i> Livrée
                         </div>
                     </div>
-                    <div class="order-actions">
-                        <a class="action-link">Voir les détails</a>
-                        <a class="action-link">Commander de nouveau</a>
+                    <div class="order-options">
+                        <a class="option-link">Voir les détails</a>
+                        <a class="option-link">Commander de nouveau</a>
                     </div>
                 </div>
                 
-                <div class="order-card">
+                <div class="order-item">
                     <div class="order-header">
-                        <div class="order-title">Lamadon</div>
-                        <div class="order-id">#28104</div>
+                        <div class="order-name">Lamadon</div>
+                        <div class="order-number">#28104</div>
                     </div>
-                    <div class="order-details">
+                    <div class="order-info">
                         <div class="order-price">98 Dh | 1 Produit</div>
-                        <div class="order-status cancelled">
+                        <div class="order-state cancelled">
                             <i class="fas fa-times-circle"></i> Annulée
                         </div>
                     </div>
-                    <div class="order-actions">
-                        <a class="action-link">Voir les détails</a>
+                    <div class="order-options">
+                        <a class="option-link">Voir les détails</a>
                     </div>
                 </div>
                 
-                <div class="order-card">
+                <div class="order-item">
                     <div class="order-header">
-                        <div class="order-title">Lamadon</div>
-                        <div class="order-id">#28117</div>
+                        <div class="order-name">Lamadon</div>
+                        <div class="order-number">#28117</div>
                     </div>
-                    <div class="order-details">
+                    <div class="order-info">
                         <div class="order-price">98 Dh | 1 Produit</div>
-                        <div class="order-status">
+                        <div class="order-state">
                             <i class="fas fa-check-circle"></i> Livrée
                         </div>
                     </div>
-                    <div class="order-actions">
-                        <a class="action-link">Voir les détails</a>
-                        <a class="action-link">Commander de nouveau</a>
+                    <div class="order-options">
+                        <a class="option-link">Voir les détails</a>
+                        <a class="option-link">Commander de nouveau</a>
                     </div>
                 </div>
                 
-                <div class="order-card">
+                <div class="order-item">
                     <div class="order-header">
-                        <div class="order-title">Lamadon</div>
-                        <div class="order-id">#28104</div>
+                        <div class="order-name">Lamadon</div>
+                        <div class="order-number">#28104</div>
                     </div>
-                    <div class="order-details">
+                    <div class="order-info">
                         <div class="order-price">98 Dh | 1 Produit</div>
-                        <div class="order-status cancelled">
+                        <div class="order-state cancelled">
                             <i class="fas fa-times-circle"></i> Annulée
                         </div>
                     </div>
-                    <div class="order-actions">
-                        <a class="action-link">Voir les détails</a>
+                    <div class="order-options">
+                        <a class="option-link">Voir les détails</a>
                     </div>
                 </div>
-                
             </div>
         </div>
         
-       
+        
     </div>
 
     <!-- Bootstrap 5 JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
+   
     
 </body>
 </html>
